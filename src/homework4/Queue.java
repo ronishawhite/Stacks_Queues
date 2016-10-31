@@ -14,4 +14,17 @@ public class Queue {
 		this.head=0;
 		this.tail=this.head;	//the queue is empty when initialized, Q.head=Q.tail=0;
 	}
-	
+	public String enqueue(int element)
+	{
+		if(this.head==this.tail+1) return "Overflow";
+		if(this.tail==array.length-1){
+			array[this.tail]=element;
+			this.tail=0;
+			return "Enqueued";
+		}
+		else{
+			array[this.tail]=element;
+			this.tail=this.tail+1;
+			return "Enqueued";
+		}
+	}
