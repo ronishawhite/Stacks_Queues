@@ -29,3 +29,17 @@ public class Stack {
 			this.top=this.top-1;
 			return Integer.toString(array[this.top+1]);
 		}
+	}
+	public int top()
+	{
+		return this.top;
+	}
+	public void print()
+	{
+		for(int i=0;i<this.array.length;i++)
+		{
+			System.out.print(this.array[i]+", ");
+		}
+	}
+
+}
