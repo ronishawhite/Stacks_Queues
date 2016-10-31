@@ -40,3 +40,16 @@ public class Queue {
 			return Integer.toString(dq);
 		}
 	}
+	public void print()
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			System.out.print(array[i]+", ");
+			
+		}
+		System.out.println();
+		System.out.print("Head: "+this.head+", ");
+		System.out.println("Tail: "+this.tail);
+	}
+
+}
