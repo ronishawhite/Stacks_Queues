@@ -21,4 +21,11 @@ public class Stack {
 			this.array[this.top]=element;
 			return	"Pushed successfully";
 		}
-		
+	}
+	public String pop()
+	{
+		if(this.top==-1) return "Underflow";
+		else{
+			this.top=this.top-1;
+			return Integer.toString(array[this.top+1]);
+		}
