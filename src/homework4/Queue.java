@@ -28,3 +28,15 @@ public class Queue {
 			return "Enqueued";
 		}
 	}
+	public String dequeue()
+	{
+		if(this.head==this.tail) return "Underflow";
+		
+		else
+		{
+			this.head=this.head+1;
+			int dq=array[this.head-1];
+			array[this.head-1]=0;
+			return Integer.toString(dq);
+		}
+	}
