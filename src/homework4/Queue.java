@@ -30,14 +30,14 @@ public class Queue {
 	}
 	public String dequeue()
 	{
-		if(this.head==this.tail) return "Underflow";
+		if(this.head==this.tail) return "-1";
 		
 		else
 		{
 			this.head=this.head+1;
-			int dq=array[this.head-1];
+			String dq=array[this.head-1];
 			array[this.head-1]=0;
-			return Integer.toString(dq);
+			return dq;
 		}
 	}
 	public void print()

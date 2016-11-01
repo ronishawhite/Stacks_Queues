@@ -22,14 +22,16 @@ public class Stack {
 			return	"Pushed successfully";
 		}
 	}
-	public String pop()
+	public int pop(){
 	{
-		if(this.top==-1) return "Underflow";
-		else{
+		 if(this.top==-1) return -1; 
+	
+		 else
 			this.top=this.top-1;
-			return Integer.toString(array[this.top+1]);
-		}
+			return array[this.top+1];
 	}
+	}
+	
 	public int top()
 	{
 		return this.top;
