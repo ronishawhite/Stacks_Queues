@@ -42,7 +42,7 @@ public class Driver {
 			s.push(s1.pop());
 		}
 		
-	
+	s1.print();
 	}
 	
 		
@@ -59,7 +59,7 @@ public class Driver {
 			s2.push(s3.pop());
 		}
 		
-		
+		s2.print();
 		
 		
 		

@@ -12,24 +12,26 @@ public class Stack {
 		this.top=-1;	
 		array=new int[size];
 	}
-	public String push()
+	public String push(int i)
 	{
 		//check if the stack is not full
-		if(this.top==this.size-1) return "Overflow";
+		if(this.top==size-1) return "Overflow";
 		else{
 			this.top=this.top+1;
-			this.array[this.top]=string;
+			this.array[this.top]=i;
+	
 			return	"Pushed successfully";
 		}
 	}
 	public int pop(){
-	{
+	
 		 if(this.top==-1) return -1; 
 	
-		 else
+		 else{
 			this.top=this.top-1;
+
 			return array[this.top+1];
-	}
+		 }
 	}
 	
 	public int top()
@@ -38,10 +40,31 @@ public class Stack {
 	}
 	public void print()
 	{
-		for(int i=0;i<this.array.length;i++)
+		for(int i=top;i>=0;i--)
 		{
 			System.out.print(this.array[i]+", ");
 		}
 	}
 
-}
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	Stack s=new Stack(15);
+	s.push(3);
+	s.push(34);
+	s.push(33);
+	s.push(93);
+	s.push(34);
+	s.push(33);
+	s.push(93);
+	s.push(34);
+	s.push(33);
+	s.push(93);
+	s.push(93);
+	s.pop();
+	s.top();
+	s.push(67);
+	s.print();
+	}
+
+	}
