@@ -12,13 +12,13 @@ public class Stack {
 		this.top=-1;	
 		array=new int[size];
 	}
-	public String push(int element)
+	public String push()
 	{
 		//check if the stack is not full
 		if(this.top==this.size-1) return "Overflow";
 		else{
 			this.top=this.top+1;
-			this.array[this.top]=element;
+			this.array[this.top]=string;
 			return	"Pushed successfully";
 		}
 	}
