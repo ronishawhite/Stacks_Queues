@@ -11,25 +11,15 @@ public class Driver {
 		//objects and declarations for stacks and queues. 	
 		
 		
-		Stack s=new Stack(size); //new stack created//make a new stack object
+		 //new stack created//make a new stack object
 		//pushing the elements
-		s.push(1);
-		s.push(2);
-		s.push(3);
 	
 		
-		s.print(); //s.print will print the stack, by popping from it.
+		 //s.print will print the stack, by popping from it.
 		//similarily, you can make a queue object, and then enqueue into it and dequeue from it.
-		Queue q=new Queue(size);
-		q.enqueue(1);
-		q.enqueue(2);
-		q.enqueue(3);
-		
-		q.print();
+	
 		//drive 
-		Driver driver=new Driver();
-		driver.stack_to_queue(s,q); //to transfer from stack s to queue q
-		driver.queue_to_stack(q,s); //to transfer from queue q to stack s.
+		 //to transfer from queue q to stack s.
 	}
 	public void stack_to_queue(Stack s,Queue q)		//copy from s to q
 	{
