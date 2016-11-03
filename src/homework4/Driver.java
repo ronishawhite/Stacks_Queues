@@ -26,18 +26,7 @@ public class Driver {
 		
 		
 		}
-		//objects and declarations for stacks and queues. 	
 		
-		
-		 //new stack created//make a new stack object
-		//pushing the elements
-	
-		
-		 //s.print will print the stack, by popping from it.
-		//similarily, you can make a queue object, and then enqueue into it and dequeue from it.
-	
-		//drive 
-		 //to transfer from queue q to stack s.
 	
 	public static void stack_to_queue(Stack s,Queue q)		//copy from s to q
 	{

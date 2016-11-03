@@ -39,6 +39,7 @@ public class Queue {
 			
 		}
 	}
+	//peek method
 	int peek(){
 		return head.getData();
 		

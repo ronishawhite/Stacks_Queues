@@ -12,6 +12,7 @@ public class Stack {
 		this.top=-1;	
 		array=new int[size];
 	}
+	//push method
 	public String push(int i)
 	{
 		//check if the stack is not full
@@ -23,6 +24,7 @@ public class Stack {
 			return	"Pushed successfully";
 		}
 	}
+	//pop method
 	public int pop(){
 	
 		 if(this.top==-1) return -1; 
