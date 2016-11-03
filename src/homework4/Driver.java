@@ -7,7 +7,25 @@ public class Driver {
 	
 	public static void main(String args[])
 	{
+		Stack s=new Stack(3);
+		s.push(3);
+		s.push(34);
+		s.push(33);
 		
+		Stack s2 = new Stack(3); 
+		Queue q= new Queue();
+	
+		System.out.println("stack to queue:");
+		stack_to_queue( s, q); 
+	
+		System.out.println("queue to stack:");
+		queue_to_stack(q, s);
+		System.out.println();
+		System.out.println("stack to stack:");
+		stack_to_stack(s, s2);
+		
+		
+		}
 		//objects and declarations for stacks and queues. 	
 		
 		
@@ -20,17 +38,20 @@ public class Driver {
 	
 		//drive 
 		 //to transfer from queue q to stack s.
-	}
-	public void stack_to_queue(Stack s,Queue q)		//copy from s to q
+	
+	public static void stack_to_queue(Stack s,Queue q)		//copy from s to q
 	{
-		for(int i=0;i<size;i++)
+		int size = s.getTop();
+		for(int i=0;i<=size;i++)
 		{
 			q.enqueue(s.pop());
 		}
+		q.print();
 	}
 		
-	public void queue_to_stack(Queue q,Stack s)		//copy from q to s
+	public static void queue_to_stack(Queue q,Stack s)		//copy from q to s
 	{
+		int size = q.size;
 		Stack s1=new Stack(size);
 		for(int i=0;i<size;i++)
 		{
@@ -42,19 +63,23 @@ public class Driver {
 			s.push(s1.pop());
 		}
 		
-	s1.print();
+	s.print();
 	}
 	
+	
 		
-	public void stack_to_stack(Stack s1,Stack s2)	//copy from s1 to s2
+	public static void stack_to_stack(Stack s1,Stack s2)	//copy from s1 to s2
 	{	
+		int size = s1.getTop(); 
+		Stack s3=new Stack(size+1);
 		
-		Stack s3=new Stack(size);
-		for(int i=0;i<size;i++)
+
+		for(int i=0;i<=size+1;i++)
 		{
 			s3.push(s1.pop());
 		}
-		for(int i=0;i<size;i++)
+
+		for(int i=0;i<=size;i++)
 		{
 			s2.push(s3.pop());
 		}
@@ -64,7 +89,6 @@ public class Driver {
 		
 		
 	}
-	
 	
 
 }

@@ -66,5 +66,11 @@ public static void main(String[] args) {
 	s.push(67);
 	s.print();
 	}
+public int getTop() {
+	return top;
+}
+public void setTop(int top) {
+	this.top = top;
+}
 
 	}
